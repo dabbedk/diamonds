@@ -34,3 +34,5 @@ miadonna = miadonna[['carat', 'cut', 'color', 'clarity', 'price', 'type', 'sourc
 # Create new dataset with data from previous 3 datasets
 diamonds = pd.concat([mined, cleanorigin, miadonna], ignore_index = True)
 diamonds.replace('None', np.nan, inplace = True)
+
+diamonds.to_csv('all_diamonds.csv', index = False)
