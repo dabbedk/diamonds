@@ -28,7 +28,7 @@ roundcut_button.click()
 time.sleep(3)
 
 # create .csv file
-csv_file = open('lab_diamonds.csv', 'w', newline = '')
+csv_file = open('cleanorigin_diamonds.csv', 'w', newline = '')
 writer = csv.writer(csv_file)
 
 # set page numbers
@@ -55,7 +55,6 @@ while True:
                 price = diamond.find_element_by_xpath('.//*[@class="price-wrapper "]').text
             except:
                 print('Problem getting variable(s)!')
-                print(f'{driver.current_url}')
                 continue
 
             diamond_dict['carat'] = carat
