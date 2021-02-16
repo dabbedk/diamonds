@@ -5,8 +5,11 @@ Diamonds used for engagement rings were my main focus. Although diamonds of vari
 All the diamonds in the dataset are round-cut, to be consistent with the ggplot diamonds dataset. Other variables will vary along the industry scales of color, cut, and clarity:
 
 Variable scales from best to worst:
+<br>
 Cut: Ideal / Excellent / Very Good / Good / Fair / Poor
+<br>
 Clarity: IF / VVS1 / VVS2 / VS1 / VS2 / SI1 / SI2 / I1
+<br>
 Color: D / E / F / G / H / I / J / K
 
 After finding the strong correlation between price and carat weight, I created the "Price-per-Carat" variable to normalize the data while comparing across other variables. The column is titled "ppc."
